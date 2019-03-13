@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import KNDBoxPlot
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var boxPlot: KNDBoxPlot!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
+    override func viewDidLayoutSubviews() {
+//        boxPlot.setNeedsUpdateConstraints()
     }
 
     override func didReceiveMemoryWarning() {

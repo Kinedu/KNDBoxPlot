@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KNDBoxPlot'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'This library was created with the purpose of helping to show information in the form of Box Plot'
   s.swift_version    = '4.2'
 
@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Classes/*.{swift, xib}'
   
-  # s.resource_bundles = {
-  #   'KNDBoxPlot' => ['KNDBoxPlot/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'KNDBoxPlot' => ['Classes/*.xib']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

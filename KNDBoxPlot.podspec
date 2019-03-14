@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KNDBoxPlot'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'This library was created with the purpose of helping to show information in the form of Box Plot'
   s.swift_version    = '4.2'
 
@@ -26,12 +26,13 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'roger.contreras.vl@gmail.com' => 'roger@kinedu.com' }
-  s.source           = { :git => 'https://github.com/Kinedu/KNDBoxPlot.git', :tag => '0.1.1' }
+  s.source           = { :git => 'https://github.com/Kinedu/KNDBoxPlot.git', :tag => '0.1.2' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
 
   s.source_files = 'Classes/*.{swift, xib}'
+  s.resources = 'Classes/*.xib'
   
    s.resource_bundles = {
      'KNDBoxPlot' => ['Classes/*.xib']

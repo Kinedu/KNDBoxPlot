@@ -42,14 +42,14 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6F7CF451424D5C03819E3D34 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		8439EEBE2B751BC6F6A470FD /* KNDBoxPlot.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KNDBoxPlot.podspec; path = ../KNDBoxPlot.podspec; sourceTree = "<group>"; };
+		8439EEBE2B751BC6F6A470FD /* KNDBoxPlot.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KNDBoxPlot.podspec; path = ../KNDBoxPlot.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1664DC928427641AD760D1C /* Pods_KNDBoxPlot_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNDBoxPlot_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A348E513E2F4D28F1889B016 /* Pods-KNDBoxPlot_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNDBoxPlot_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNDBoxPlot_Example/Pods-KNDBoxPlot_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A6BF7ABEAA2C271117F87C51 /* Pods-KNDBoxPlot_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNDBoxPlot_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNDBoxPlot_Example/Pods-KNDBoxPlot_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AA72628ACDD842601791403C /* Pods-KNDBoxPlot_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNDBoxPlot_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KNDBoxPlot_Tests/Pods-KNDBoxPlot_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB7AB082A264F30791E23B00 /* Pods_KNDBoxPlot_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNDBoxPlot_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB2CC9EB2239815C004DFF21 /* BoxPlot2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxPlot2.xib; sourceTree = "<group>"; };
-		DB80A01B22274A7E003BC032 /* KNDBoxPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNDBoxPlot.swift; sourceTree = "<group>"; };
+		DB2CC9EB2239815C004DFF21 /* BoxPlot2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BoxPlot2.xib; path = ../../../BoxPlot2.xib; sourceTree = "<group>"; };
+		DB80A01B22274A7E003BC032 /* KNDBoxPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KNDBoxPlot.swift; path = ../../../KNDBoxPlot.swift; sourceTree = "<group>"; };
 		E89794271A178BF9B2414C0B /* Pods-KNDBoxPlot_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNDBoxPlot_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNDBoxPlot_Tests/Pods-KNDBoxPlot_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

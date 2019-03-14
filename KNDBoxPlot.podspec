@@ -22,11 +22,11 @@ Pod::Spec.new do |s|
 #TODO: Add long description of the pod here.
 #                       DESC
 
-  s.homepage         = 'https://github.com/Kinedu/KNDBoxPlot'
+  s.homepage         = 'https://github.com/Kinedu/KNDBoxPlot.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'roger.contreras.vl@gmail.com' => 'roger@kinedu.com' }
-  s.source           = { :git => 'https://github.com/Kinedu/KNDBoxPlot', :tag => '0.1.0' }
+  s.source           = { :git => 'https://github.com/Kinedu/KNDBoxPlot.git', :tag => '0.1.0' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'

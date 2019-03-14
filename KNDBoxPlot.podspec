@@ -9,7 +9,8 @@
 Pod::Spec.new do |s|
   s.name             = 'KNDBoxPlot'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of KNDBoxPlot.'
+  s.summary          = 'This library was created with the purpose of helping to show information in the form of Box Plot'
+  s.swift_version    = '4.2'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,7 +22,7 @@ Pod::Spec.new do |s|
 #TODO: Add long description of the pod here.
 #                       DESC
 
-  s.homepage         = 'https://github.com/roger.contreras.vl@gmail.com/KNDBoxPlot'
+  s.homepage         = 'https://github.com/Kinedu/KNDBoxPlot'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'roger.contreras.vl@gmail.com' => 'roger@kinedu.com' }
@@ -30,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'KNDBoxPlot','KNDBoxPlot/**/*.{swift, xib}'
+  s.source_files = 'Classes/*.{swift, xib}'
   
   # s.resource_bundles = {
   #   'KNDBoxPlot' => ['KNDBoxPlot/Assets/*.png']

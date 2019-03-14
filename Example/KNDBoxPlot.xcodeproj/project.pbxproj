@@ -17,7 +17,6 @@
 		A0F251687E6357EBF17F3886 /* Pods_KNDBoxPlot_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB7AB082A264F30791E23B00 /* Pods_KNDBoxPlot_Example.framework */; };
 		DB2CC9EC2239815C004DFF21 /* BoxPlot2.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB2CC9EB2239815C004DFF21 /* BoxPlot2.xib */; };
 		DB80A01C22274A7E003BC032 /* KNDBoxPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB80A01B22274A7E003BC032 /* KNDBoxPlot.swift */; };
-		DB80A01E22274A92003BC032 /* KNDBoxPlot.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB80A01D22274A92003BC032 /* KNDBoxPlot.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +50,6 @@
 		BB7AB082A264F30791E23B00 /* Pods_KNDBoxPlot_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KNDBoxPlot_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2CC9EB2239815C004DFF21 /* BoxPlot2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BoxPlot2.xib; sourceTree = "<group>"; };
 		DB80A01B22274A7E003BC032 /* KNDBoxPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNDBoxPlot.swift; sourceTree = "<group>"; };
-		DB80A01D22274A92003BC032 /* KNDBoxPlot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KNDBoxPlot.xib; sourceTree = "<group>"; };
 		E89794271A178BF9B2414C0B /* Pods-KNDBoxPlot_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KNDBoxPlot_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KNDBoxPlot_Tests/Pods-KNDBoxPlot_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -170,7 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				DB80A01B22274A7E003BC032 /* KNDBoxPlot.swift */,
-				DB80A01D22274A92003BC032 /* KNDBoxPlot.xib */,
 				DB2CC9EB2239815C004DFF21 /* BoxPlot2.xib */,
 			);
 			path = BoxPlot;
@@ -263,7 +260,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB80A01E22274A92003BC032 /* KNDBoxPlot.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				DB2CC9EC2239815C004DFF21 /* BoxPlot2.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,

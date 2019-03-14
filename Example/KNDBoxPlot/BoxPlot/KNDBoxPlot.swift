@@ -11,16 +11,30 @@ import UIKit
 @IBDesignable
 class KNDBoxPlot: UIView {
 
+    /// The position of main value
     @IBOutlet weak var currentPositionView: UIView!
-    @IBOutlet weak var roundedTopView: UIView!
+    /// Used to show a rounded mark at the top of the main position
+    @IBOutlet weak var roundedTopView: UIView! {
+        didSet {
+            roundedTopView.layer.cornerRadius = roundedTopView.frame.width/2
+        }
+    }
     
+    /// The Horizontal line of the chart
     @IBOutlet weak var barLenght: UIView!
+    /// The box of the graph.
     @IBOutlet weak var boxPlot: UIView!
+    /// Background of the control
     @IBOutlet var contentView: UIView!
+    /// Left border
     @IBOutlet weak var leftLine: UIView!
+    /// Right Border
     @IBOutlet weak var rightLine: UIView!
+    /// Initial value below left border
     @IBOutlet weak var startValueLabel: UILabel!
+    /// Final value below right border
     @IBOutlet weak var endValueLabel: UILabel!
+    /// Title for the control
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var boxHeightConstraint: NSLayoutConstraint!
@@ -28,6 +42,7 @@ class KNDBoxPlot: UIView {
     @IBOutlet weak var boxLeftSpaceConstraint: NSLayoutConstraint!
     @IBOutlet weak var currentPosLeftSpaceConstraint: NSLayoutConstraint!
     
+    /// Border radius of the Box Plot
     @IBInspectable
     public var boxRadius : CGFloat = 2.0 {
         didSet{
@@ -35,6 +50,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Use this option if you want to hide the box.
     @IBInspectable
     public var showBoxPlot : Bool = true {
         didSet {
@@ -42,6 +58,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Change main color of the box. Default is blue.
     @IBInspectable
     public var boxColor : UIColor = UIColor.blue {
         didSet {
@@ -49,6 +66,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Change the color of main position mark. Default is dark gray.
     @IBInspectable
     public var currentColor : UIColor = UIColor.darkGray {
         didSet {
@@ -60,6 +78,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Change the color of lines of the chart.
     @IBInspectable
     public var linesColor : UIColor = UIColor.darkGray {
         didSet {
@@ -69,6 +88,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Main Position
     @IBInspectable
     public var currentPosition : CGFloat = 1 {
         didSet {
@@ -76,6 +96,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Start position on X of the box plot. Percentage 0 to 100.
     @IBInspectable
     public var startValue : CGFloat = 1 {
         didSet {
@@ -83,6 +104,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// End position on X of the box plot. Percentage 0 to 100.
     @IBInspectable
     public var endValue : CGFloat = 10 {
         didSet {
@@ -90,6 +112,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Height of box plot in points.
     @IBInspectable
     public var boxHeight : CGFloat = 40 {
         didSet {
@@ -98,6 +121,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Display or hide labels.
     @IBInspectable
     public var showLegend : Bool = true {
         didSet {
@@ -107,6 +131,7 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Title of the chart.
     @IBInspectable
     public var title : String = "Box Plot" {
         didSet {
@@ -114,6 +139,23 @@ class KNDBoxPlot: UIView {
         }
     }
     
+    /// Value of Start Label. Isn't show if Show Legend is false
+    @IBInspectable
+    public var initialChartValue : String = "0" {
+        didSet {
+            self.startValueLabel.text = initialChartValue
+        }
+    }
+    
+    /// Value of End Label. Isn't show if Show Legend is false
+    @IBInspectable
+    public var finalChartValue : String = "100" {
+        didSet {
+            self.endValueLabel.text = finalChartValue
+        }
+    }
+    
+    /// Calculates box plot size.
     func setup() {
         self.barLenght.updateConstraints()
         

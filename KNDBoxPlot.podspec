@@ -35,7 +35,7 @@ Pod::Spec.new do |s|
   s.resources = 'Classes/*.xib'
   
    s.resource_bundles = {
-     'KNDBoxPlot' => ['Classes/*.xib']
+     'KNDBoxPlot' => ['KNDBoxPlot/Classes/*.xib']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

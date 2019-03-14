@@ -184,10 +184,16 @@ class KNDBoxPlot: UIView {
         commonInit()
     }
     
+    /// Check pod bundle and load xib file.
     private func commonInit() {
-        Bundle.main.loadNibNamed("BoxPlot2", owner: self, options: nil)
-        addSubview(contentView)
-        contentView.frame = self.bounds
-        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        let podBundle = Bundle(for: self.classForCoder)
+        if let bundle = Bundle(url: podBundle.bundleURL) {
+            bundle.loadNibNamed("BoxPlot2", owner: self, options: nil)
+            addSubview(contentView)
+            contentView.frame = self.bounds
+            contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        }else {
+            assertionFailure("Could not load the bundle")
+        }
     }
 }

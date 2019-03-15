@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KNDBoxPlot'
-  s.version          = '0.1.6'
+  s.version          = '0.1.7'
   s.summary          = 'This library was created with the purpose of helping to show information in the form of Box Plot'
   s.swift_version    = '4.2'
 

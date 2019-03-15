@@ -15,6 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        boxPlot.boxHeight = 38
+        boxPlot.textFont = UIFont(name: "Helvetica-Light", size: 28)
     }
     
     override func viewDidAppear(_ animated: Bool) {

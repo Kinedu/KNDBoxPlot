@@ -116,7 +116,7 @@ public class KNDBoxPlotController: UIView {
     @IBInspectable
     public var boxHeight : CGFloat = 40 {
         didSet {
-            self.boxHeightConstraint.constant = boxHeight
+            
             setup()
         }
     }
@@ -155,6 +155,18 @@ public class KNDBoxPlotController: UIView {
         }
     }
     
+    public var textFont : UIFont? {
+        didSet {
+            self.titleLabel.font = textFont
+            self.startValueLabel.font = textFont
+            self.endValueLabel.font = textFont
+        }
+    }
+    
+    public override func prepareForInterfaceBuilder() {
+        super.prepareForInterfaceBuilder()
+    }
+    
     /// Calculates box plot size.
     func setup() {
         self.barLenght.updateConstraints()
@@ -166,6 +178,7 @@ public class KNDBoxPlotController: UIView {
         self.boxLeftSpaceConstraint.constant = start
         self.boxWidthConstraint.constant = width-start
         self.currentPosLeftSpaceConstraint.constant = startPosition
+        self.boxHeightConstraint.constant = boxHeight
     }
     
     override public func layoutSubviews() {

@@ -168,7 +168,7 @@ public class KNDBoxPlotController: UIView {
         self.currentPosLeftSpaceConstraint.constant = startPosition
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         setup()
         super.layoutSubviews()

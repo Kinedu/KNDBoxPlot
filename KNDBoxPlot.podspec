@@ -34,9 +34,9 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/*.{swift, xib}'
   s.resources = 'Classes/*.xib'
   
-   s.resource_bundles = {
-     'KNDBoxPlot' => ['KNDBoxPlot/Classes/*.xib']
-   }
+#   s.resource_bundles = {
+#     'KNDBoxPlot' => ['KNDBoxPlot/Classes/*.xib']
+#   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

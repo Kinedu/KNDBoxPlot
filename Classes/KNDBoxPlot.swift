@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class KNDBoxPlot: UIView {
+class KNDBoxPlotController: UIView {
 
     /// The position of main value
     @IBOutlet weak var currentPositionView: UIView!

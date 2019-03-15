@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMU-tD-75h" customClass="KNDBoxPlot" customModule="KNDBoxPlot_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMU-tD-75h" customClass="KNDBoxPlotController" customModule="KNDBoxPlot_Example" customModuleProvider="target">
                                 <rect key="frame" x="32" y="313.5" width="311" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="VEb-lt-m7O"/>
@@ -56,7 +56,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="title" value="MILESTONES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcJ-d5-Yj5" customClass="KNDBoxPlot" customModule="KNDBoxPlot_Example" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcJ-d5-Yj5" customClass="KNDBoxPlotController" customModule="KNDBoxPlot_Example" customModuleProvider="target">
                                 <rect key="frame" x="32" y="378" width="249" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="jS3-yV-E6F"/>

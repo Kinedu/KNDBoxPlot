@@ -22,7 +22,7 @@ pod 'KNDBoxPlot'
 
 ## Author
 
-roger.contreras.vl@gmail.com, roger@kinedu.com
+roger.contreras.vl@gmail.com
 
 ## License
 
